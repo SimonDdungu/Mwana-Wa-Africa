@@ -1,9 +1,13 @@
 {
+  "homepage": "https://simonddungu.github.io/Mwana-Wa-Africa/",
   "name": "charity",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "react-scripts-start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist --repo https://github.com/SimonDdungu/Mwana-Wa-Africa.git",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
