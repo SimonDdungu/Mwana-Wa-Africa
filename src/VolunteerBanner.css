@@ -1,0 +1,56 @@
+.VolunteerBanner{
+    background-color: #2f4159;
+    padding: 50px 0;
+}
+
+.Volunteer_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.Small-heading{
+    font-size: 16px;
+    color: orange;
+    margin-bottom: 0;
+    
+}
+.Big-heading{
+    margin-top: 0;
+    font-size: 40px;
+    color: white;
+}
+.Volunteer_Details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Volunteer_Details input{
+    
+    border: 2px solid #4b5d75;
+    padding: 15px 20px;
+    background-color: #2f4159;
+    border-radius: 50px;
+    box-shadow: 0 0 8px #0000004f;
+    margin-right: 20px;
+}
+.Volunteer_Details input::placeholder{
+    color: #e2e4e7;
+}
+
+.V_JoinUs{
+    font-size: 20px;
+    padding: 10px 50px;
+    background-color: orange;
+    border: 2px solid orange;
+    border-radius: 50px;
+    transition: all 0.1s ease;
+    text-align: center;
+    color: black;
+}
+.V_JoinUs:hover{
+    background-color: #2f4159;
+    color: white;
+}
+
