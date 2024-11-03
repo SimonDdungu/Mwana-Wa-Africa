@@ -1,6 +1,6 @@
 .Navigation_Bar{
     position: absolute;
-    width: 100svw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
