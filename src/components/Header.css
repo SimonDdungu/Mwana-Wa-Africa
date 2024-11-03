@@ -1,0 +1,143 @@
+.Navigation_Bar{
+    position: absolute;
+    width: 100svw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px 0 30px;
+    color: white;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.Hamburger_menu{
+    display: none;
+    width: 20px;
+    height: 25px;
+    margin-left: auto;
+    position: relative;
+}
+
+/*----------Hamburger default button-------*/
+.Hamburger_menu span{
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+}
+.Hamburger_menu span:nth-child(1){
+    top: 25%;
+}
+.Hamburger_menu span:nth-child(3){
+    top: 75%;
+}
+
+
+/*------Hamburger close button-----*/
+.Hamburger_menu.active span:nth-child(1){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.Hamburger_menu.active span:nth-child(3){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.Hamburger_menu.active span:nth-child(2){
+    opacity: 0;
+}
+
+
+.Navigation_Bar > h2{
+    margin: 0;
+}
+
+.Nav_items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Nav_links{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding: 20px 15px;
+    position: relative;
+    width: max-content;
+    
+}
+.Nav_links a{
+    text-decoration: none;
+    color: white;
+}
+.Nav_links a:hover{
+    color: orange;
+}
+.Nav_links.active a{
+    color: orange;
+}
+.Nav_links.active::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: orange;
+    bottom: 0;
+    left: 0;
+}
+
+.Donate_Navbar{
+    background-color: orange;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    transition: all ease 0.3s;
+    color: black;
+    text-decoration: none;
+}
+.Donate_Navbar:hover{
+    text-decoration: none;
+    background-color: #00696d;
+    color: white;
+}
+
+
+/*--------IPAD 11 PRO-------*/
+@media (max-width: 840px){
+    .collapse_on_mobile{
+        display: none;
+    }
+    .Hamburger_menu{
+        display: block;
+    }
+}
+
+/*-----IPHONE 12 PRO MAX----*/
+@media (max-width: 445px){
+    .Navigation_Bar{
+        padding-top: 20px;
+    }
+    .Navigation_Bar > h2{
+        font-size: 25px;
+    }
+}
+
+/*------IPHONE 11 PRO AND X AND OTHERS----*/
+@media (max-width: 380px){
+    .Navigation_Bar > h2{
+        font-size: 22px;
+    }
+    .Navigation_Bar{
+        padding-left: 15px;
+    }
+}

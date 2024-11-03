@@ -1,0 +1,213 @@
+.Hero_Section{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../images/bill-wegener-8ldqRkOk5oo-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+}
+.Hero_Content{
+    position: absolute;
+    width: 40%;
+    top: 35%;
+    left: 8%;
+}
+.Hero_Content > h1{
+    font-size: 50px;
+}
+.Hero_Content > h1, .Hero_Content > p{
+    margin-bottom: 20px;
+}
+.Hero_Content > p{
+    font-size: 18px;
+    line-height: 35px;
+    width:80%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.7),rgba(0,0,0,0.5), rgba(0,0,0,0.7));
+}
+.Hero_buttons{
+    margin-top: 50px;
+}
+.Hero_Donate{
+    text-decoration: none;
+    padding: 15px;
+    background-color: orange;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    border-radius: 10px;
+    margin-right: 20px;
+    transition: background-color 0.3s ease;
+}
+.Hero_Donate:hover{
+    text-decoration: none;
+    background-color: #00696d;
+    color: white;
+}
+.Hero_LearnMore{
+    padding: 15px;
+    font-size: 20px;
+    color: orange;
+    text-decoration: underline;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.Hero_LearnMore:hover{
+    text-decoration: underline;
+    background-color: white;
+    
+    color: black;
+}
+
+
+/*---------IPAD 12 PRO------*/
+@media (max-width: 1030px){
+    .Hero_Content{
+        width: 60%;
+    }
+}
+
+/*----------IPHONE 13 and 14 and 16 PRO MAX-----*/
+@media (max-width: 445px){
+    .Hero_Section{
+        width: 100svw;
+        height: 100svh;
+    }
+    .overlay{
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    }
+    .Hero_Content{
+        width: 100%;
+        top: 62%;
+        left: 0px; 
+    }
+    .Hero_Content > h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .Hero_Content > p{
+        font-size: 16px;
+        text-align: center;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Hero_buttons{
+        text-align: center;
+    }
+    .Hero_Donate, .Hero_LearnMore{
+        padding: 13px;
+        font-size: 18px;
+    }
+    .Hero_Section{
+        height: 100svh; 
+    }
+}
+
+/*------------IPHONE 11 PRO MAX-----*/
+@media (max-width: 416px) and (max-height: 900px){
+    .Hero_Content{
+        top: 59%;
+        left: 0px; 
+    }
+    .Hero_Donate, .Hero_LearnMore{
+        padding: 13px;
+        font-size: 16px;
+    }
+
+    .Hero_buttons{
+        text-align: center;
+    }
+    
+}
+/*-----IPHONE 6, 7, 8 PLUS-----*/
+@media (max-width: 416px) and (max-height: 740px){
+    .Hero_Donate, .Hero_LearnMore{
+        padding: 13px;
+        font-size: 16px;
+    }
+    .Hero_Content{
+        top: 52%;
+    }
+    
+}
+
+
+/*----IPHONE 13 PLUS-----*/
+@media (max-width: 400px){
+    .Hero_Donate, .Hero_LearnMore{
+        padding: 13px;
+        font-size: 16px;
+    }
+    .Hero_Content{
+        top: 61%;
+    }
+    .Hero_buttons{
+        margin-top: 30px;
+        text-align: center;
+    }
+    
+}
+
+/*-------SAMSUNG S20+----------*/
+@media (max-width: 390px) and (max-height: 860px){
+    .Hero_Content{
+        top: 58%;
+    }
+    .Hero_Content > h1{
+        font-size: 38px;
+    }
+}
+
+/*-----------IPHONE 11 PR0, X, OTHER SMALLER ONES------*/
+@media (max-width: 380px) and (max-height: 815px){
+    .Hero_buttons{
+        margin-top: 20px;
+    }
+    .Hero_Content > h1{
+        font-size: 38px;
+    }
+}
+/*---------IPHONE SE---------*/
+@media (max-width: 380px) and (max-height: 670px){
+    .Hero_Content{
+        top: 53%;
+    }
+    .Hero_buttons{
+        margin-top: 20px;
+    }
+    
+    .Hero_Content > h1{
+        margin-bottom: 5px;
+    }
+}
+/*-------------SAMSUNG S20----------*/
+@media (max-width: 365px) and (max-height: 810px){
+    .Hero_Content{
+        top: 59%;
+    }
+    .Hero_Content > h1{
+        font-size: 37px;
+    }
+}
+
+
+/*-------SAMSUNG S9 and S9 PLUS--------*/
+@media (max-width: 365px) and (max-height: 750px){
+    .Hero_Content{
+        top: 55%;
+    }
+    .Hero_Content > h1{
+        font-size: 32px;
+    }
+}

@@ -1,0 +1,20 @@
+html{
+  overscroll-behavior: none;
+}
+html, body{
+  overflow-x: hidden;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  overscroll-behavior: none;
+}
+
+
+.Orange_color{
+  color: orange;
+}
+.green_color{
+  color: #00696d;
+}
