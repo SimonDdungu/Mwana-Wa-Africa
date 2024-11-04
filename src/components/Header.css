@@ -114,6 +114,11 @@
 
 /*--------IPAD 11 PRO-------*/
 @media (max-width: 840px){
+    .Navigation_Bar{
+        background-color: black;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
     .collapse_on_mobile{
         display: none;
     }
@@ -124,9 +129,6 @@
 
 /*-----IPHONE 12 PRO MAX----*/
 @media (max-width: 445px){
-    .Navigation_Bar{
-        padding-top: 20px;
-    }
     .Navigation_Bar > h2{
         font-size: 25px;
     }
