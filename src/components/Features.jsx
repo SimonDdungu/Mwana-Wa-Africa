@@ -1,8 +1,13 @@
+import { motion } from "framer-motion";
 import './Features.css'
 
 const Feautres = () => {
     return (
-        <section className="Features">
+        <motion.section 
+        initial={{opacity: 0, y: 50}}
+        whileInView={{opacity: 1, y:0, transition: {duration: 1}}}
+        viewport={{once: true, amount: 0.1}}
+        className="Features">
             <div className="Features_content container">
     
                 <div className="Titles">
@@ -42,8 +47,6 @@ const Feautres = () => {
     
     
     
-    
-    
                         <div className="column2">
     
                             <div className="Each_card">
@@ -73,7 +76,7 @@ const Feautres = () => {
     
                     </div>
             </div>
-        </section>
+        </motion.section>
     );
     }
     

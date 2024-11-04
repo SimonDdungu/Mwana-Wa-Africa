@@ -19,6 +19,7 @@
     overflow: hidden;
     border-bottom: 7px solid orange;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 .image_container{
     width: 100%;
@@ -73,6 +74,8 @@
     font-weight: 600;
     margin-right: 10px;
 }
+
+
 
 
 /*----------TABLETS--------*/

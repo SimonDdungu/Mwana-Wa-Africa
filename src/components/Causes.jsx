@@ -1,10 +1,17 @@
+import { motion } from 'framer-motion';
 import './Causes.css'
 import Cause1 from '../images/Causes cards (2).jpeg';
 import Cause2 from '../images/Causes cards (1).jpeg';
 import Cause3 from '../images/Causes cards (3).jpeg';
 
 const Causes = () => {
-  return    <section className="Causes">
+  return    <motion.section 
+                initial={{opacity: 0, y: 50}}
+                whileInView={{opacity: 1, y: 0, transition: {duration: 1.2}}}
+                viewport={{once: true}}
+
+                className="Causes">
+
                 <div className="Causes_content container">
                     <h2 className='green_color'>Latest Causes</h2>
 
@@ -107,6 +114,6 @@ const Causes = () => {
 
                     </div>
                 </div>
-            </section>
+            </motion.section>
 }
 export default Causes;
