@@ -13,7 +13,7 @@ const Causes = () => {
                 className="Causes">
 
                 <div className="Causes_content container">
-                    <h2 className='green_color'>Latest Causes</h2>
+                    <h2 className='green_color text-2xl font-semibold'>Latest Causes</h2>
 
                     <div className="CauseCard_container">
 

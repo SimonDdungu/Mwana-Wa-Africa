@@ -5,14 +5,14 @@ const Feautres = () => {
     return (
         <motion.section 
         initial={{opacity: 0, y: 50}}
-        whileInView={{opacity: 1, y:0, transition: {duration: 1}}}
+        whileInView={{opacity: 1, y:0, transition: {duration: 1, ease: "easeIn"}}}
         viewport={{once: true, amount: 0.1}}
         className="Features">
             <div className="Features_content container">
     
                 <div className="Titles">
-                    <h3>How Your Donation Makes an Impact!</h3>
-                    <h2>Your support can change lives
+                    <h3 className="text-xl ">How Your Donation Makes an Impact!</h3>
+                    <h2 className="text-2xl font-semibold">Your support can change lives
                         <br />Every contribution counts
                     </h2>
                 </div>
