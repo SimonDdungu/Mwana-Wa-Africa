@@ -21,7 +21,7 @@ const [isMenuActive, SetMenuActive] = useState(false);
                     <a className="Donate_Navbar collapse_on_mobile" href="#">Donate Now</a>
 
 
-                    <div className="Hamburger_menu" onClick={() => SetMenuActive(!isMenuActive)}>
+                    <div className={`Hamburger_menu ${isMenuActive && "active"}`} onClick={() => SetMenuActive(!isMenuActive)}>
                         <span></span>
                         <span></span>
                         <span></span>
